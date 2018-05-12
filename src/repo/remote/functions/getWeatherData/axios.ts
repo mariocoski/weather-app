@@ -5,7 +5,7 @@ import { IReading } from '../../../local/FactoryConfig';
 interface IOptions {
   readonly countryId: string;
 }
-const appid = process.env.REACT_APP_WEATHER_APP_ID ;// || '4b8f50afbaa3c7c63483e160b0f19ebd';
+const appid = process.env.REACT_APP_WEATHER_APP_ID ;
 
 interface IConfig {
   readonly axios: () => Promise<AxiosInstance>;
