@@ -13,7 +13,11 @@ I have used semantic-ui-react for css layer [semantic-react-ui]
 ## 3. Setup
 ```cp .env.example .env```
 Go to https://openweathermap.org/ and log in 
-Grab your api id and weather api url - most likely: (http://api.openweathermap.org/data/2.5/forecast) 
+
+Grab your api id and weather api url 
+- most likely: (http://api.openweathermap.org/data/2.5/forecast) 
+
+Change your that .env and provide those vars:
 ```
 REACT_APP_WEATHER_APP_ID=yourAppId
 REACT_APP_WEATHER_API_URL=http://api.openweathermap.org/data/2.5/forecast
