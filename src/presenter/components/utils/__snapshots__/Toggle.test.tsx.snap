@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can toggle 1`] = `
+<div
+  className="ui checked toggle checkbox"
+  onChange={[Function]}
+  onClick={[Function]}
+  onMouseDown={[Function]}
+>
+  <input
+    checked={true}
+    className="hidden"
+    id={undefined}
+    name={undefined}
+    onClick={[Function]}
+    readOnly={true}
+    tabIndex={0}
+    type="checkbox"
+    value={undefined}
+  />
+  <label
+    htmlFor={undefined}
+  >
+    label
+  </label>
+</div>
+`;

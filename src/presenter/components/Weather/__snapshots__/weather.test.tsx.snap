@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can match weather snapshot 1`] = `
+<div
+  className="ui container"
+>
+  <table
+    className="ui celled inverted table"
+  >
+    <tbody
+      className=""
+    />
+  </table>
+</div>
+`;
+
+exports[`should show loading message when loading weather forecast 1`] = `
+<div
+  className="ui container"
+>
+  <table
+    className="ui celled inverted table"
+  >
+    <tbody
+      className=""
+    >
+      <tr
+        className=""
+      >
+        <td
+          className="positive"
+          colSpan={3}
+        >
+          Loading...
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`should show message that no foreast is available 1`] = `
+<div
+  className="ui container"
+>
+  <table
+    className="ui celled inverted table"
+  >
+    <tbody
+      className=""
+    >
+      <tr
+        className=""
+      >
+        <td
+          className="warning"
+          colSpan={3}
+        >
+          No weather forecase found... :(
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
