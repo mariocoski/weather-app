@@ -1,3 +1,4 @@
+
 This project was bootstrapped with [Create-React-App-Typescript](https://github.com/wmonk/create-react-app-typescript).
 
 I have used semantic-ui-react for css layer [semantic-react-ui]
