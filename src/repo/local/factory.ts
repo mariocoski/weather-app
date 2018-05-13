@@ -28,7 +28,7 @@ export default ({ emitChange = () => null }: FactoryConfig = {}) => {
   };
   
   const clearState = () => {
-    state = initialState;
+    state = {...initialState};
   };
 
   return { getState, patchState, clearState };

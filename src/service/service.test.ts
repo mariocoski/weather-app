@@ -8,11 +8,15 @@ import serviceFactory from './factory';
 const repo = {
   ...repoFactory(),
   remote: {
-    getWeatherData: jest.fn((type) => {
+    getWeatherData: () => jest.fn((type) => {
       return Promise.resolve(testState.weather.data);
     }),
   }
 };
+
+beforeEach(() => {
+  service.clearService();
+});
 
 const service = serviceFactory({ repo });
 
@@ -40,8 +44,8 @@ describe(__filename,()=>{
     expect(weather).toMatchObject(testState.weather);
   });
 
-  it('should call weather and correctly set the weather', () => {
-    service.getWeatherData();
+  it('should call weather and correctly set the weather', async() => {
+    await service.getWeatherData();
     const currentWeatherData = repo.local.getState().weather.data;
     expect(currentWeatherData).toMatchObject(testState.weather.data);
   });
