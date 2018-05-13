@@ -8,19 +8,15 @@ interface IOptions {
 
 export default ({ files }: IOptions) => {
   return async (): Promise<IReading[]> => {
-    return new Promise((resolve, reject) =>{
+    return new Promise(async(resolve, reject) =>{
       if(files.length === 0){
         return resolve([]);
       }
       try{
-        const reader = new FileReader();
-        reader.onload = async(e) => {
-           const data =  await parseFile(files[0]).catch((err) => {
-             reject(err);
-           });
-           resolve(data as IReading[]);
-        }
-        reader.readAsText(files[0]);
+        const data =  await parseFile(files[0]).catch((err) => {
+          reject(err);
+        });
+        resolve(data as IReading[]);
       }catch(err){
         reject(err);
       }
